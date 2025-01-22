@@ -9,9 +9,6 @@ ol {
 
 /* TODO 1: Set the CSS for all paragraph tags to "color: red;" */
 
-* {
-  text-align: center;
-}
 
 p {
   color: red;
