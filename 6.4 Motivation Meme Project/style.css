@@ -1,0 +1,25 @@
+body {
+    background-color: black;
+    padding: 20px;
+}
+
+div {
+    background-color: white;
+}
+
+h1 {
+    background-color: white;
+    font-family: "Libre Baskerville", serif;
+}
+
+
+#imgg {
+    border: 5px solid white;
+}
+.poster {
+    width:100%;
+    margin-right: 10px;
+    margin-top: 100px;
+    color: white
+    
+}
