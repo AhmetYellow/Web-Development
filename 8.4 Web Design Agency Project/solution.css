@@ -21,8 +21,9 @@ footer {
 
 .tile-image {
   height: 200px;
+    margin-right: 50px;
   float: left;
-  margin-right: 50px;
+
 }
 
 .card {

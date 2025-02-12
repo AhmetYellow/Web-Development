@@ -11,8 +11,7 @@ body {
 }
 
 h1 {
-  font-size: 2rem;
-
+  font-size: 5rem;
 }
 
 footer {
@@ -20,24 +19,50 @@ footer {
   color: midnightblue;
 }
 
-.tile-image{
-  
- height: 200px;
- width: 200px;
+.tile-image {
+  height: 200px;
+    margin-right: 50px;
+  float: left;
 
 }
 
-div {
-  display: inline;
+.card {
+  width: 45%;
 }
 
-.left-card {
-  float:left;
+.left {
+  float: left;
 }
 
-.right-card {
+.right {
   float: right;
 }
 
+.creative {
+  color: midnightblue;
+}
 
+@media (max-width: 680px) {
+  .logo {
+    width: 100px;
+  }
 
+  h1 {
+    font-size: 3.5rem;
+    text-align: center;
+  }
+
+  .card {
+    width: 100%;
+    display: block;
+    margin-bottom: 30px;
+    text-align: justify;
+  }
+
+  .card img {
+    margin-bottom: 10px;
+    width: 100%;
+    display: inline;
+    object-fit: cover;
+  }
+}
