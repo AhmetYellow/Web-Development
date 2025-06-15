@@ -3,25 +3,25 @@ import './App.css'
 import { Grid } from "@mui/material";
 import UserCard from './components/userCard';
 
-function App() {
-  const [users, setUsers] = useState([]);
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Home from "./pages/Home";
+import Register from "./pages/Register";
+import Login from "./pages/Login";
+import Dashboard from "./pages/Dashboard";
 
-  useEffect(() => {
-  fetch("http://localhost:3000/users")
-    .then((response) => response.json())
-    .then((data) => {
-      console.log("Fetched users:", data.users); // 👈 Add this
-      setUsers(data.users);
-    });
-}, []);
+
+
+
+function App() {
   return (
-    <Grid container spacing={2}>
-      {users.map((user) => (
-        <Grid item xs={12} sm={6} md={4} key={user._id}>
-          <UserCard user={user} />
-        </Grid>
-      ))}
-    </Grid>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/register" element={<Register />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/dashboard" element={<Dashboard />} />
+      </Routes>
+    </Router>
   );
 }
 
